@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "RetirementInfo";
+}
+
+@model RetirementViewModel
+
+<h1>RetirementInfo</h1>
+
+@ViewBag.CanRetire 
+
+@ViewBag.Benefits
+
+@Model.CanRetire
+@Model.Benefits?.ToString("C")
